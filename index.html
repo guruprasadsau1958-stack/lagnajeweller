@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lagna Jwellery — Bridal Collection</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --gold: #b8860b;
+  --gold-light: #d4a92a;
+  --gold-pale: #f5e6b0;
+  --gold-shine: #ffe88a;
+  --ivory: #fdf8f0;
+  --cream: #f7f0e3;
+  --blush: #f9efe8;
+  --deep: #1a1208;
+  --brown: #3d2b0f;
+  --warm-grey: #8a7a6a;
+  --font-display: 'Cormorant Garamond', serif;
+  --font-script: 'Great Vibes', cursive;
+  --font-body: 'Jost', sans-serif;
+  --wa: #25D366;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--ivory);
+  color: var(--deep);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+/* ORNAMENT */
+.ornament {
+  display: block;
+  text-align: center;
+  color: var(--gold);
+  font-size: 1.1rem;
+  letter-spacing: 0.5em;
+  margin: 8px 0;
+  opacity: 0.7;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 200;
+  background: rgba(253,248,240,0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(184,134,11,0.15);
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.nav-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+}
+.nav-logo .script {
+  font-family: var(--font-script);
+  font-size: 1.9rem;
+  color: var(--gold);
+  line-height: 1;
+}
+.nav-logo .sub {
+  font-family: var(--font-body);
+  font-size: 0.55rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--warm-grey);
+  margin-top: 2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 0.78rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--brown);
+  text-decoration: none;
+  transition: color 0.2s;
+  font-weight: 400;
+}
+.nav-links a:hover { color: var(--gold); }
+
+.nav-wa {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--wa);
+  color: #fff;
+  text-decoration: none;
+  padding: 9px 18px;
+  border-radius: 24px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  transition: background 0.2s, transform 0.2s;
+}
+.nav-wa:hover { background: #1ebe5d; transform: translateY(-1px); }
+.nav-wa svg { width: 16px; height: 16px; fill: #fff; }
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 70px;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 30%, rgba(212,169,42,0.12) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 60% at 20% 80%, rgba(249,176,83,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 60% at 80% 80%, rgba(249,176,83,0.06) 0%, transparent 60%),
+    var(--ivory);
+}
+
+/* Mandala pattern */
+.hero-mandala {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(700px, 90vw);
+  height: min(700px, 90vw);
+  opacity: 0.06;
+  animation: slowSpin 60s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes slowSpin { to { transform: translate(-50%, -50%) rotate(360deg); } }
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 24px;
+}
+
+.hero-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+  animation: fadeUp 1s ease 0.2s both;
+}
+
+.hero-title {
+  font-family: var(--font-script);
+  font-size: clamp(56px, 10vw, 120px);
+  color: var(--deep);
+  line-height: 1.1;
+  margin-bottom: 6px;
+  animation: fadeUp 1s ease 0.4s both;
+}
+
+.hero-title-sub {
+  font-family: var(--font-display);
+  font-size: clamp(14px, 2vw, 20px);
+  font-weight: 300;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 28px;
+  animation: fadeUp 1s ease 0.5s both;
+}
+
+.hero-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 20px auto;
+  animation: fadeUp 1s ease 0.6s both;
+}
+.hero-divider-line { width: 80px; height: 1px; background: linear-gradient(to right, transparent, var(--gold)); }
+.hero-divider-line.r { background: linear-gradient(to left, transparent, var(--gold)); }
+.hero-divider-diamond {
+  width: 8px; height: 8px;
+  background: var(--gold);
+  transform: rotate(45deg);
+}
+
+.hero-desc {
+  font-family: var(--font-display);
+  font-size: clamp(16px, 2.2vw, 22px);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--warm-grey);
+  max-width: 520px;
+  margin: 0 auto 44px;
+  line-height: 1.7;
+  animation: fadeUp 1s ease 0.7s both;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeUp 1s ease 0.9s both;
+}
+
+.btn-rent {
+  background: transparent;
+  border: 1.5px solid var(--gold);
+  color: var(--gold);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 14px 36px;
+  text-decoration: none;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.btn-rent::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+.btn-rent:hover { color: var(--ivory); }
+.btn-rent:hover::before { transform: scaleX(1); }
+
+.btn-buy {
+  background: var(--gold);
+  color: var(--ivory);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 14px 36px;
+  text-decoration: none;
+  transition: all 0.3s;
+  border: 1.5px solid var(--gold);
+}
+.btn-buy:hover { background: var(--brown); border-color: var(--brown); transform: translateY(-2px); }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* FLOATING WA BUTTON */
+.wa-float {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 300;
+  width: 60px; height: 60px;
+  background: var(--wa);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 24px rgba(37,211,102,0.4);
+  text-decoration: none;
+  animation: waPulse 2.5s infinite;
+  transition: transform 0.2s;
+}
+.wa-float:hover { transform: scale(1.1); }
+.wa-float svg { width: 30px; height: 30px; fill: #fff; }
+
+@keyframes waPulse {
+  0%, 100% { box-shadow: 0 6px 24px rgba(37,211,102,0.4); }
+  50% { box-shadow: 0 6px 36px rgba(37,211,102,0.65); }
+}
+
+/* CONTACT STRIP */
+.contact-strip {
+  background: var(--deep);
+  color: var(--gold-pale);
+  padding: 14px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+}
+.contact-item a {
+  color: var(--gold-pale);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.contact-item a:hover { color: var(--gold-shine); }
+.contact-item .icon { font-size: 1rem; }
+
+/* SECTION */
+section { padding: 100px 40px; }
+
+.section-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.section-eyebrow {
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 5vw, 60px);
+  font-weight: 400;
+  color: var(--deep);
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+.section-title em { font-style: italic; color: var(--gold); }
+
+.section-sub {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--warm-grey);
+  font-weight: 300;
+  max-width: 480px;
+  margin: 16px auto 0;
+  line-height: 1.7;
+}
+
+/* CATEGORIES */
+.categories { background: var(--cream); }
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.cat-card {
+  background: var(--ivory);
+  text-align: center;
+  padding: 40px 24px 32px;
+  border: 1px solid rgba(184,134,11,0.12);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+.cat-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(212,169,42,0.06), transparent);
+  opacity: 0;
+  transition: opacity 0.35s;
+}
+.cat-card:hover { transform: translateY(-6px); box-shadow: 0 16px 48px rgba(184,134,11,0.12); border-color: rgba(184,134,11,0.35); }
+.cat-card:hover::before { opacity: 1; }
+
+.cat-emoji { font-size: 2.8rem; margin-bottom: 16px; display: block; }
+
+.cat-name {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--deep);
+  margin-bottom: 6px;
+}
+
+.cat-sub {
+  font-size: 0.78rem;
+  color: var(--warm-grey);
+  letter-spacing: 0.05em;
+}
+
+.cat-corner {
+  position: absolute;
+  top: 0; right: 0;
+  width: 40px; height: 40px;
+  overflow: hidden;
+}
+.cat-corner::after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  border-style: solid;
+  border-width: 0 40px 40px 0;
+  border-color: transparent rgba(184,134,11,0.15) transparent transparent;
+  transition: border-color 0.3s;
+}
+.cat-card:hover .cat-corner::after { border-color: transparent rgba(184,134,11,0.4) transparent transparent; }
+
+/* COLLECTIONS */
+.collections { background: var(--ivory); }
+
+.collection-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 56px;
+  border: 1px solid rgba(184,134,11,0.25);
+  max-width: 460px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 56px;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 12px 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--warm-grey);
+  transition: all 0.2s;
+}
+.tab-btn.active { background: var(--gold); color: var(--ivory); }
+.tab-btn:hover:not(.active) { background: rgba(184,134,11,0.08); color: var(--gold); }
+
+.jewellery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.jewel-card {
+  background: var(--cream);
+  border: 1px solid rgba(184,134,11,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.jewel-card:hover { box-shadow: 0 12px 40px rgba(184,134,11,0.15); transform: translateY(-4px); border-color: rgba(184,134,11,0.3); }
+
+.jewel-img {
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, var(--blush) 0%, var(--cream) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  position: relative;
+  overflow: hidden;
+}
+.jewel-img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 50%, rgba(26,18,8,0.04));
+}
+
+.jewel-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  font-size: 0.62rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  font-weight: 500;
+  z-index: 2;
+}
+.badge-new { background: var(--gold); color: var(--ivory); }
+.badge-popular { background: var(--deep); color: var(--gold-pale); }
+
+.jewel-body { padding: 20px 22px 24px; }
+
+.jewel-name {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--deep);
+  margin-bottom: 4px;
+}
+
+.jewel-type {
+  font-size: 0.75rem;
+  color: var(--warm-grey);
+  letter-spacing: 0.08em;
+  margin-bottom: 14px;
+}
+
+.jewel-prices {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.price-tag {
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  border-radius: 2px;
+}
+.price-rent { background: rgba(184,134,11,0.1); color: var(--gold); border: 1px solid rgba(184,134,11,0.2); }
+.price-buy { background: rgba(26,18,8,0.06); color: var(--brown); border: 1px solid rgba(26,18,8,0.12); }
+
+.jewel-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.action-rent, .action-buy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 8px;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.25s;
+  border: 1px solid;
+}
+
+.action-rent {
+  color: var(--gold);
+  border-color: var(--gold);
+  background: transparent;
+}
+.action-rent:hover { background: var(--gold); color: var(--ivory); }
+
+.action-buy {
+  color: var(--ivory);
+  border-color: var(--deep);
+  background: var(--deep);
+}
+.action-buy:hover { background: var(--brown); border-color: var(--brown); }
+
+.action-rent svg, .action-buy svg { width: 13px; height: 13px; fill: currentColor; flex-shrink: 0; }
+
+/* IMITATION JEWELLERY SECTION */
+.imitation-section { background: var(--ivory); }
+
+.imitation-banner {
+  background: linear-gradient(135deg, var(--deep) 0%, #2d1f0a 100%);
+  border: 1px solid rgba(184,134,11,0.3);
+  max-width: 1100px;
+  margin: 0 auto 64px;
+  padding: 40px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.imitation-banner-text h3 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--gold-pale);
+  margin-bottom: 8px;
+}
+.imitation-banner-text h3 em { font-style: italic; color: var(--gold-shine); }
+.imitation-banner-text p {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: rgba(245,230,176,0.55);
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.imitation-banner-badges {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.imitation-badge {
+  padding: 8px 18px;
+  border: 1px solid rgba(184,134,11,0.35);
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold-pale);
+  white-space: nowrap;
+}
+
+.imitation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  max-width: 1100px;
+  margin: 0 auto 64px;
+}
+
+.imitation-card {
+  background: var(--cream);
+  border: 1px solid rgba(184,134,11,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.imitation-card:hover { box-shadow: 0 12px 40px rgba(184,134,11,0.15); transform: translateY(-4px); border-color: rgba(184,134,11,0.3); }
+
+.imitation-tag {
+  position: absolute;
+  top: 14px; right: 14px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  color: var(--deep);
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.imitation-img {
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, #f0e8d8 0%, var(--cream) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  position: relative;
+  overflow: hidden;
+}
+.imitation-img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 50%, rgba(26,18,8,0.04));
+}
+
+.imitation-body { padding: 20px 22px 24px; }
+
+.imitation-name {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--deep);
+  margin-bottom: 4px;
+}
+
+.imitation-type {
+  font-size: 0.75rem;
+  color: var(--warm-grey);
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+
+.imitation-material {
+  display: inline-block;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid rgba(184,134,11,0.3);
+  padding: 3px 8px;
+  margin-bottom: 14px;
+}
+
+.imitation-prices {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.imitation-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+/* Imitation Rent vs Buy cards */
+.imitation-options {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.imitation-options-title {
+  text-align: center;
+  margin-bottom: 36px;
+}
+.imitation-options-title h3 {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 3.5vw, 40px);
+  font-weight: 400;
+  color: var(--deep);
+}
+.imitation-options-title h3 em { font-style: italic; color: var(--gold); }
+.imitation-options-title p {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--warm-grey);
+  margin-top: 8px;
+}
+
+.imitation-options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.imit-option {
+  padding: 40px 36px;
+  border: 1px solid;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.imit-option:hover { transform: translateY(-4px); }
+
+.imit-option.rent {
+  background: var(--cream);
+  border-color: rgba(184,134,11,0.25);
+}
+.imit-option.buy {
+  background: var(--deep);
+  border-color: rgba(184,134,11,0.35);
+}
+.imit-option.buy:hover { box-shadow: 0 14px 40px rgba(26,18,8,0.3); }
+.imit-option.rent:hover { box-shadow: 0 14px 40px rgba(184,134,11,0.12); }
+
+.imit-option-eyebrow {
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.imit-option.rent .imit-option-eyebrow { color: var(--gold); }
+.imit-option.buy .imit-option-eyebrow { color: var(--gold-shine); }
+
+.imit-option-title {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+.imit-option.rent .imit-option-title { color: var(--deep); }
+.imit-option.buy .imit-option-title { color: var(--gold-pale); }
+
+.imit-option-tagline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.92rem;
+  margin-bottom: 24px;
+}
+.imit-option.rent .imit-option-tagline { color: var(--warm-grey); }
+.imit-option.buy .imit-option-tagline { color: rgba(245,230,176,0.55); }
+
+.imit-features {
+  list-style: none;
+  margin-bottom: 28px;
+}
+.imit-features li {
+  padding: 7px 0;
+  font-size: 0.82rem;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border-bottom: 1px solid;
+}
+.imit-option.rent .imit-features li { color: var(--brown); border-color: rgba(184,134,11,0.1); }
+.imit-option.buy .imit-features li { color: rgba(253,248,240,0.7); border-color: rgba(184,134,11,0.1); }
+.imit-features li .tick { color: var(--gold); font-size: 0.75rem; flex-shrink: 0; }
+
+.imit-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 28px;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.25s;
+}
+.imit-option.rent .imit-cta { border: 1.5px solid var(--gold); color: var(--gold); }
+.imit-option.rent .imit-cta:hover { background: var(--gold); color: var(--ivory); }
+.imit-option.buy .imit-cta { background: var(--gold); color: var(--deep); border: 1.5px solid var(--gold); }
+.imit-option.buy .imit-cta:hover { background: var(--gold-light); }
+.imit-cta svg { width: 15px; height: 15px; fill: currentColor; }
+
+/* HOW IT WORKS */
+.how-it-works { background: var(--deep); color: var(--ivory); }
+.how-it-works .section-title { color: var(--gold-pale); }
+.how-it-works .section-title em { color: var(--gold-shine); }
+.how-it-works .ornament { color: var(--gold); opacity: 0.5; }
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(184,134,11,0.15);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.step-box {
+  background: var(--deep);
+  padding: 40px 28px;
+  text-align: center;
+  position: relative;
+  transition: background 0.3s;
+}
+.step-box:hover { background: rgba(184,134,11,0.06); }
+
+.step-num {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  color: rgba(184,134,11,0.2);
+  line-height: 1;
+  margin-bottom: 16px;
+  transition: color 0.3s;
+}
+.step-box:hover .step-num { color: rgba(212,169,42,0.5); }
+
+.step-icon { font-size: 1.8rem; margin-bottom: 14px; }
+
+.step-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--gold-pale);
+  margin-bottom: 10px;
+}
+
+.step-text {
+  font-size: 0.83rem;
+  color: rgba(253,248,240,0.5);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* RENT vs BUY */
+.options-section { background: var(--blush); }
+
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.option-card {
+  padding: 52px 44px;
+  text-align: center;
+  border: 1px solid;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.option-card:hover { transform: translateY(-6px); }
+
+.option-card.rent {
+  background: var(--ivory);
+  border-color: rgba(184,134,11,0.25);
+}
+.option-card.buy {
+  background: var(--deep);
+  border-color: rgba(184,134,11,0.4);
+}
+.option-card.buy:hover { box-shadow: 0 16px 48px rgba(26,18,8,0.3); }
+.option-card.rent:hover { box-shadow: 0 16px 48px rgba(184,134,11,0.15); }
+
+.option-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.option-card.rent .option-label { color: var(--gold); }
+.option-card.buy .option-label { color: var(--gold-shine); }
+
+.option-title {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.option-card.rent .option-title { color: var(--deep); }
+.option-card.buy .option-title { color: var(--gold-pale); }
+
+.option-tagline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 28px;
+}
+.option-card.rent .option-tagline { color: var(--warm-grey); }
+.option-card.buy .option-tagline { color: rgba(245,230,176,0.6); }
+
+.option-features {
+  list-style: none;
+  margin-bottom: 36px;
+  text-align: left;
+}
+.option-features li {
+  padding: 8px 0;
+  font-size: 0.85rem;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid;
+}
+.option-card.rent .option-features li { color: var(--brown); border-color: rgba(184,134,11,0.1); }
+.option-card.buy .option-features li { color: rgba(253,248,240,0.7); border-color: rgba(184,134,11,0.12); }
+.option-features li .tick { color: var(--gold); font-size: 0.8rem; flex-shrink: 0; }
+
+.option-cta {
+  display: block;
+  padding: 14px 32px;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.25s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.option-card.rent .option-cta { border: 1.5px solid var(--gold); color: var(--gold); }
+.option-card.rent .option-cta:hover { background: var(--gold); color: var(--ivory); }
+.option-card.buy .option-cta { background: var(--gold); color: var(--deep); border: 1.5px solid var(--gold); }
+.option-card.buy .option-cta:hover { background: var(--gold-light); }
+.option-cta svg { width: 16px; height: 16px; fill: currentColor; }
+
+/* TESTIMONIALS */
+.testimonials { background: var(--cream); }
+
+.testi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testi-card {
+  background: var(--ivory);
+  padding: 36px 30px;
+  border: 1px solid rgba(184,134,11,0.1);
+  position: relative;
+}
+.testi-card::before {
+  content: '"';
+  position: absolute;
+  top: 16px; left: 24px;
+  font-family: var(--font-display);
+  font-size: 5rem;
+  color: rgba(184,134,11,0.1);
+  line-height: 1;
+}
+
+.testi-text {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.98rem;
+  color: var(--brown);
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-weight: 300;
+  position: relative;
+}
+
+.testi-author {
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+}
+
+.testi-stars { color: var(--gold); font-size: 0.7rem; margin-bottom: 16px; letter-spacing: 0.15em; }
+
+/* CONTACT SECTION */
+.contact-section { background: var(--ivory); }
+
+.contact-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.contact-info h3 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--deep);
+  margin-bottom: 8px;
+}
+.contact-info h3 em { font-style: italic; color: var(--gold); }
+
+.contact-info p {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--warm-grey);
+  font-weight: 300;
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.contact-detail .icon { font-size: 1.2rem; width: 32px; text-align: center; }
+.contact-detail .text { font-size: 0.9rem; color: var(--brown); }
+.contact-detail .text a { color: var(--brown); text-decoration: none; transition: color 0.2s; }
+.contact-detail .text a:hover { color: var(--gold); }
+.contact-detail .label { font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--warm-grey); }
+
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.wa-action {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 24px;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  transition: all 0.25s;
+  border: 1.5px solid;
+}
+
+.wa-rent {
+  background: var(--ivory);
+  color: var(--gold);
+  border-color: var(--gold);
+}
+.wa-rent:hover { background: var(--gold); color: var(--ivory); transform: translateX(4px); }
+
+.wa-buy {
+  background: var(--deep);
+  color: var(--gold-pale);
+  border-color: var(--deep);
+}
+.wa-buy:hover { background: var(--brown); border-color: var(--brown); transform: translateX(4px); }
+
+.wa-enquiry {
+  background: var(--wa);
+  color: #fff;
+  border-color: var(--wa);
+}
+.wa-enquiry:hover { background: #1ebe5d; border-color: #1ebe5d; transform: translateX(4px); }
+
+.wa-action svg { width: 20px; height: 20px; fill: currentColor; flex-shrink: 0; }
+.wa-action .wa-label { flex: 1; }
+.wa-action .wa-arrow { font-size: 1rem; }
+
+/* FOOTER */
+footer {
+  background: var(--deep);
+  color: rgba(253,248,240,0.5);
+  padding: 52px 40px 28px;
+  text-align: center;
+}
+
+.footer-logo {
+  font-family: var(--font-script);
+  font-size: 2.8rem;
+  color: var(--gold);
+  margin-bottom: 6px;
+  display: block;
+}
+
+.footer-tagline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: rgba(184,134,11,0.6);
+  margin-bottom: 24px;
+}
+
+.footer-divider {
+  width: 120px;
+  height: 1px;
+  background: rgba(184,134,11,0.3);
+  margin: 0 auto 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  list-style: none;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+.footer-links a {
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(184,134,11,0.5);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--gold); }
+
+.footer-copy {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: rgba(253,248,240,0.25);
+}
+
+/* SCROLL REVEAL */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.8s ease, transform 0.8s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-d1 { transition-delay: 0.1s; }
+.reveal-d2 { transition-delay: 0.2s; }
+.reveal-d3 { transition-delay: 0.3s; }
+.reveal-d4 { transition-delay: 0.4s; }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  nav { padding: 0 20px; }
+  .nav-links { display: none; }
+  section { padding: 72px 20px; }
+  .categories-grid { grid-template-columns: repeat(2, 1fr); }
+  .jewellery-grid { grid-template-columns: repeat(2, 1fr); }
+  .steps-grid { grid-template-columns: repeat(2, 1fr); }
+  .options-grid { grid-template-columns: 1fr; }
+  .testi-grid { grid-template-columns: 1fr; }
+  .contact-inner { grid-template-columns: 1fr; gap: 40px; }
+  .contact-strip { padding: 12px 20px; gap: 20px; }
+}
+@media (max-width: 560px) {
+  .categories-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .jewellery-grid { grid-template-columns: 1fr; }
+  .steps-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- FLOATING WHATSAPP -->
+<a class="wa-float" href="https://wa.me/918917288790?text=Hello%20Lagna%20Jwellery!%20I%27m%20interested%20in%20your%20jewellery%20collection." target="_blank" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <span class="script">Lagna Jwellery</span>
+    <span class="sub">Bridal &amp; Festive Collections</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#categories">Categories</a></li>
+    <li><a href="#imitation">Imitation</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a class="nav-wa" href="https://wa.me/918917288790?text=Hello%20Lagna%20Jwellery!" target="_blank">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Chat Now
+  </a>
+</nav>
+
+<!-- CONTACT STRIP -->
+<div class="contact-strip">
+  <div class="contact-item"><span class="icon">📞</span><a href="tel:+918917288790">+91 89172 88790</a></div>
+  <div class="contact-item"><span class="icon">💬</span><a href="https://wa.me/918917288790" target="_blank">WhatsApp: 8917288790</a></div>
+  <div class="contact-item"><span class="icon">✨</span><span>Rent &amp; Buy · Bridal · Festive · Custom Orders</span></div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <!-- Decorative mandala SVG -->
+  <svg class="hero-mandala" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="100" cy="100" r="98" stroke="#b8860b" stroke-width="0.5"/>
+    <circle cx="100" cy="100" r="80" stroke="#b8860b" stroke-width="0.5"/>
+    <circle cx="100" cy="100" r="60" stroke="#b8860b" stroke-width="0.5"/>
+    <circle cx="100" cy="100" r="40" stroke="#b8860b" stroke-width="0.5"/>
+    <line x1="100" y1="2" x2="100" y2="198" stroke="#b8860b" stroke-width="0.3"/>
+    <line x1="2" y1="100" x2="198" y2="100" stroke="#b8860b" stroke-width="0.3"/>
+    <line x1="16" y1="16" x2="184" y2="184" stroke="#b8860b" stroke-width="0.3"/>
+    <line x1="184" y1="16" x2="16" y2="184" stroke="#b8860b" stroke-width="0.3"/>
+    <polygon points="100,5 103,95 100,100 97,95" fill="#b8860b" opacity="0.4"/>
+    <polygon points="100,195 103,105 100,100 97,105" fill="#b8860b" opacity="0.4"/>
+    <polygon points="5,100 95,97 100,100 95,103" fill="#b8860b" opacity="0.4"/>
+    <polygon points="195,100 105,97 100,100 105,103" fill="#b8860b" opacity="0.4"/>
+  </svg>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">✦ Bridal &amp; Festive Jewellery ✦</p>
+    <h1 class="hero-title">Lagna Jwellery</h1>
+    <p class="hero-title-sub">Where Every Piece Tells a Story</p>
+
+    <div class="hero-divider">
+      <div class="hero-divider-line"></div>
+      <div class="hero-divider-diamond"></div>
+      <div class="hero-divider-diamond" style="transform:rotate(45deg) scale(0.6); opacity:0.5;"></div>
+      <div class="hero-divider-diamond"></div>
+      <div class="hero-divider-line r"></div>
+    </div>
+
+    <p class="hero-desc">Exquisite gold, kundan, polki &amp; diamond jewellery for your most precious moments. Available to <strong>rent</strong> or <strong>buy</strong>.</p>
+
+    <div class="hero-buttons">
+      <a href="https://wa.me/918917288790?text=Hello!%20I%20want%20to%20RENT%20jewellery%20from%20Lagna%20Jwellery.%20Please%20share%20the%20catalogue." target="_blank" class="btn-rent">✦ Rent Jewellery</a>
+      <a href="https://wa.me/918917288790?text=Hello!%20I%20want%20to%20BUY%20jewellery%20from%20Lagna%20Jwellery.%20Please%20share%20the%20catalogue." target="_blank" class="btn-buy">Buy Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories" id="categories">
+  <div class="section-header">
+    <p class="section-eyebrow">✦ Our Collections ✦</p>
+    <h2 class="section-title">Shop by <em>Category</em></h2>
+    <div class="ornament">— ✦ —</div>
+    <p class="section-sub">From bridal sets to festive accessories — find the perfect jewellery for every occasion.</p>
+  </div>
+
+  <div class="categories-grid">
+    <div class="cat-card reveal" onclick="window.open('https://wa.me/918917288790?text=I%20am%20interested%20in%20Necklace%20Sets.%20Please%20share%20your%20catalogue.','_blank')">
+      <div class="cat-corner"></div>
+      <span class="cat-emoji">📿</span>
+      <h3 class="cat-name">Necklace Sets</h3>
+      <p class="cat-sub">Bridal • Layered • Choker</p>
+    </div>
+    <div class="cat-card reveal reveal-d1" onclick="window.open('https://wa.me/918917288790?text=I%20am%20interested%20in%20Bangles%20%26%20Kadas.%20Please%20share%20your%20catalogue.','_blank')">
+      <div class="cat-corner"></div>
+      <span class="cat-emoji">💛</span>
+      <h3 class="cat-name">Bangles &amp; Kadas</h3>
+      <p class="cat-sub">Gold • Kundan • Stone</p>
+    </div>
+    <div class="cat-card reveal reveal-d2" onclick="window.open('https://wa.me/918917288790?text=I%20am%20interested%20in%20Maang%20Tikka.%20Please%20share%20your%20catalogue.','_blank')">
+      <div class="cat-corner"></div>
+      <span class="cat-emoji">👑</span>
+      <h3 class="cat-name">Maang Tikka</h3>
+      <p class="cat-sub">Bridal • Festive • Matha Patti</p>
+    </div>
+    <div class="cat-card reveal reveal-d3" onclick="window.open('https://wa.me/918917288790?text=I%20am%20interested%20in%20Earrings.%20Please%20share%20your%20catalogue.','_blank')">
+      <div class="cat-corner"></div>
+      <span class="cat-emoji">✨</span>
+      <h3 class="cat-name">Earrings</h3>
+      <p class="cat-sub">Jhumkas • Chandbali • Drops</p>
+    </div>
+    <div class="cat-card reveal" onclick="window.open('https://wa.me/918917288790?text=I%20am%20interested%20in%20Haath%20Phool%20%26%20Rings.%20Please%20share%20your%20catalogue.','_blank')">
+      <div class="cat-corner"></div>
+      <span class="cat-emoji">💍</span>
+      <h3 class="cat-name">Haath Phool &amp; Rings</h3>
+      <p class="cat-sub">Engagement • Cocktail • Bridal</p>
+    </div>
+    <div class="cat-card reveal reveal-d1" onclick="window.open('https://wa.me/918917288790?text=I%20am%20interested%20in%20Nath%20%26%20Nose%20Pins.%20Please%20share%20your%20catalogue.','_blank')">
+      <div class="cat-corner"></div>
+      <span class="cat-emoji">🌸</span>
+      <h3 class="cat-name">Nath &amp; Nose Pins</h3>
+      <p class="cat-sub">Bridal • Traditional • Modern</p>
+    </div>
+    <div class="cat-card reveal reveal-d2" onclick="window.open('https://wa.me/918917288790?text=I%20am%20interested%20in%20Anklets%20%26%20Payal.%20Please%20share%20your%20catalogue.','_blank')">
+      <div class="cat-corner"></div>
+      <span class="cat-emoji">🔔</span>
+      <h3 class="cat-name">Anklets &amp; Payal</h3>
+      <p class="cat-sub">Silver • Gold Plated • Stone</p>
+    </div>
+    <div class="cat-card reveal reveal-d3" onclick="window.open('https://wa.me/918917288790?text=I%20am%20interested%20in%20Full%20Bridal%20Sets.%20Please%20share%20your%20catalogue.','_blank')">
+      <div class="cat-corner"></div>
+      <span class="cat-emoji">🎁</span>
+      <h3 class="cat-name">Full Bridal Sets</h3>
+      <p class="cat-sub">Complete Wedding • Engagement</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- IMITATION JEWELLERY RENT & BUY -->
+<section class="imitation-section" id="imitation">
+  <div class="section-header">
+    <p class="section-eyebrow">✦ New Service ✦</p>
+    <h2 class="section-title">Imitation <em>Jewellery</em></h2>
+    <div class="ornament">— ✦ —</div>
+    <p class="section-sub">High-quality imitation jewellery — Rent for a day or Own forever. Look stunning without breaking the bank.</p>
+  </div>
+
+  <!-- Info Banner -->
+  <div class="imitation-banner reveal">
+    <div class="imitation-banner-text">
+      <h3>Why Choose <em>Imitation?</em></h3>
+      <p>Premium-finish imitation pieces crafted to look identical to real gold, Kundan &amp; Polki jewellery — at a fraction of the cost. Perfect for weddings, functions &amp; daily wear.</p>
+    </div>
+    <div class="imitation-banner-badges">
+      <span class="imitation-badge">💎 Gold-finish Plating</span>
+      <span class="imitation-badge">🌸 Kundan &amp; Meenakari</span>
+      <span class="imitation-badge">✨ Oxidised Silver</span>
+      <span class="imitation-badge">🔴 Stone-studded</span>
+    </div>
+  </div>
+
+  <!-- Imitation Product Cards -->
+  <div class="imitation-grid">
+
+    <div class="imitation-card reveal">
+      <div class="imitation-img">📿
+        <span class="imitation-tag">Bestseller</span>
+      </div>
+      <div class="imitation-body">
+        <h3 class="imitation-name">Kundan Bridal Set</h3>
+        <p class="imitation-type">Necklace + Earrings + Maangtikka</p>
+        <span class="imitation-material">Kundan · Gold Plated</span>
+        <div class="imitation-prices">
+          <span class="price-tag price-rent">Rent: ₹400/day</span>
+          <span class="price-tag price-buy">Buy: ₹2,800</span>
+        </div>
+        <div class="imitation-actions">
+          <a href="https://wa.me/918917288790?text=Hello!%20I%20want%20to%20RENT%20the%20Imitation%20Kundan%20Bridal%20Set.%20Please%20share%20availability." target="_blank" class="action-rent"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Rent</a>
+          <a href="https://wa.me/918917288790?text=Hello!%20I%20want%20to%20BUY%20the%20Imitation%20Kundan%20Bridal%20Set.%20Please%20share%20details." target="_blank" class="action-buy"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Buy</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="imitation-card reveal reveal-d1">
+      <div class="imitation-img">💠
+        <span class="imitation-tag">New</span>
+      </div>
+      <div class="imitation-body">
+        <h3 class="imitation-name">Polki Choker Set</h3>
+        <p class="imitation-type">Choker + Jhumka Earrings</p>
+        <span class="imitation-material">Polki Look · Rose Gold Plated</span>
+        <div class="imitation-prices">
+          <span class="price-tag price-rent">Rent: ₹350/day</span>
+          <span class="price-tag price-buy">Buy: ₹2,200</span>
+        </div>
+        <div class="imitation-actions">
+          <a href="https://wa.me/918917288790?text=Hello!%20I%20want%20to%20RENT%20the%20Imitation%20Polki%20Choker%20Set.%20Please%20share%20availability." target="_blank" class="action-rent"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Rent</a>
+          <a href="https://wa.me/918917288790?text=Hello!%20I%20want%20to%20BUY%20the%20Imitation%20Polki%20Choker%20Set.%20Please%20share%20details." target="_blank" class="action-buy"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Buy</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="imitation-card reveal reveal-d2">
+      <div class="imitation-img">🌺</div>
+      <div class="imitation-body">
+        <h3 class="imitation-name">Meenakari Haar Set</h3>
+        <p class="imitation-type">Long Necklace + Drop Earrings</p>
+        <span class="imitation-material">Meenakari · Antique Finish</span>
+        <div class="imitation-prices">
+          <span class="price-tag price-rent">Rent: ₹300/day</span>
+          <span class="price-tag price-buy">Buy: ₹1,800</span>
+        </div>
+        <div class="imitation-actions">
+          <a href="https://wa.me/918917288790?text=Hello!%20I%20want%20to%20RENT%20the%20Imitation%20Meenakari%20Haar%20Set.%20Please%20share%20availability." target="_blank" class="action-rent"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Rent</a>
+          <a href="https://wa.me/918917288790?text=Hello!%20I%20want%20to%20BUY%20the%20Imitation%20Meenakari%20Haar%20Set.%20Please%20share%20details." target="_blank" class="action-buy"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Buy</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="imitation-card reveal">
+      <div class="imitation-img">🌸</div>
+      <div class="imitation-body">
+        <h3 class="imitation-name">Oxidised Silver Set</h3>
+        <p class="imitation-type">Necklace + Earrings + Bangles</p>
+        <span class="imitation-material">Oxidised · Silver Tone</span>
+        <div class="imitation-prices">
+          <span class="price-tag price-rent">Rent: ₹250/day</span>
+          <span class="price-tag price-buy">Buy: ₹1,400</span>
+        </div>
+        <div class="imitation-actions">
+          <a href="https://wa.me/918917288790?text=Hello!%20I%20want%20to%20RENT%20the%20Oxidised%20Silver%20Set.%20Please%20share%20availability." target="_blank" class="action-rent"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Rent</a>
+          <a href="https://wa.me/918917288790?text=Hello!%20I%20want%20to%20BUY%20the%20Oxidised%20Silver%20Set.%20Please%20share%20details." target="_blank" class="action-buy"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Buy</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="imitation-card reveal reveal-d1">
+      <div class="imitation-img">💛
+        <span class="imitation-tag">Popular</span>
+      </div>
+      <div class="imitation-body">
+        <h3 class="imitation-name">Stone Jhumka Combo</h3>
+        <p class="imitation-type">Jhumka + Maangtikka + Ring</p>
+        <span class="imitation-material">Stone-Studded · Gold Plated</span>
+        <div class="imitation-prices">
+          <span class="price-tag price-rent">Rent: ₹200/day</span>
+          <span class="price-tag price-buy">Buy: ₹1,100</span>
+        </div>
+        <div class="imitation-actions">
+          <a href="https://wa.me/918917288790?text=Hello!%20I%20want%20to%20RENT%20the%20Stone%20Jhumka%20Combo.%20Please%20share%20availability." target="_blank" class="action-rent"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Rent</a>
+          <a href="https://wa.me/918917288790?text=Hello!%20I%20want%20to%20BUY%20the%20Stone%20Jhumka%20Combo.%20Please%20share%20details." target="_blank" class="action-buy"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Buy</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="imitation-card reveal reveal-d2">
+      <div class="imitation-img">🪷</div>
+      <div class="imitation-body">
+        <h3 class="imitation-name">Temple Deity Set</h3>
+        <p class="imitation-type">Temple Necklace + Earrings</p>
+        <span class="imitation-material">Temple Jewellery · Gold Plated</span>
+        <div class="imitation-prices">
+          <span class="price-tag price-rent">Rent: ₹500/day</span>
+          <span class="price-tag price-buy">Buy: ₹3,200</span>
+        </div>
+        <div class="imitation-actions">
+          <a href="https://wa.me/918917288790?text=Hello!%20I%20want%20to%20RENT%20the%20Imitation%20Temple%20Deity%20Set.%20Please%20share%20availability." target="_blank" class="action-rent"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Rent</a>
+          <a href="https://wa.me/918917288790?text=Hello!%20I%20want%20to%20BUY%20the%20Imitation%20Temple%20Deity%20Set.%20Please%20share%20details." target="_blank" class="action-buy"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Buy</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Imitation Rent vs Buy comparison -->
+  <div class="imitation-options">
+    <div class="imitation-options-title">
+      <h3>Imitation Jewellery — <em>Rent or Buy?</em></h3>
+      <p>Both options available for all imitation pieces. Affordable luxury for every occasion.</p>
+    </div>
+    <div class="imitation-options-grid">
+      <div class="imit-option rent reveal">
+        <p class="imit-option-eyebrow">✦ For the occasion</p>
+        <h3 class="imit-option-title">Rent</h3>
+        <p class="imit-option-tagline">Royal look, minimal spend</p>
+        <ul class="imit-features">
+          <li><span class="tick">✦</span> Starting from ₹200/day only</li>
+          <li><span class="tick">✦</span> Perfect for weddings, pujas & functions</li>
+          <li><span class="tick">✦</span> Cleaned &amp; sanitized before delivery</li>
+          <li><span class="tick">✦</span> Full bridal sets available</li>
+          <li><span class="tick">✦</span> Advance booking recommended</li>
+          <li><span class="tick">✦</span> Refundable security deposit</li>
+          <li><span class="tick">✦</span> Mix &amp; match sets welcome</li>
+        </ul>
+        <a href="https://wa.me/918917288790?text=Hello%20Lagna%20Jwellery!%20I%20am%20interested%20in%20RENTING%20Imitation%20Jewellery.%20Please%20share%20the%20imitation%20rental%20catalogue%20and%20details." target="_blank" class="imit-cta">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Enquire to Rent Imitation on WhatsApp
+        </a>
+      </div>
+      <div class="imit-option buy reveal reveal-d1">
+        <p class="imit-option-eyebrow">✦ Yours forever</p>
+        <h3 class="imit-option-title" style="color:var(--gold-pale)">Buy</h3>
+        <p class="imit-option-tagline">Own stunning pieces at great value</p>
+        <ul class="imit-features">
+          <li><span class="tick">✦</span> Prices starting from ₹1,000 only</li>
+          <li><span class="tick">✦</span> Kundan, Polki, Meenakari &amp; more</li>
+          <li><span class="tick">✦</span> Long-lasting gold &amp; silver plating</li>
+          <li><span class="tick">✦</span> Great for daily wear &amp; gifting</li>
+          <li><span class="tick">✦</span> Gift box packaging available</li>
+          <li><span class="tick">✦</span> Bulk &amp; wholesale enquiries welcome</li>
+          <li><span class="tick">✦</span> Custom colour &amp; design options</li>
+        </ul>
+        <a href="https://wa.me/918917288790?text=Hello%20Lagna%20Jwellery!%20I%20am%20interested%20in%20BUYING%20Imitation%20Jewellery.%20Please%20share%20the%20imitation%20buying%20catalogue%20and%20prices." target="_blank" class="imit-cta">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Enquire to Buy Imitation on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-it-works">
+  <div class="section-header">
+    <p class="section-eyebrow">✦ Simple Process ✦</p>
+    <h2 class="section-title" style="color:var(--gold-pale)">How It <em style="color:var(--gold-shine)">Works</em></h2>
+    <div class="ornament">— ✦ —</div>
+    <p class="section-sub" style="color:rgba(253,248,240,0.45)">Order your dream jewellery in 4 easy steps via WhatsApp</p>
+  </div>
+  <div class="steps-grid">
+    <div class="step-box reveal">
+      <div class="step-num">01</div>
+      <div class="step-icon">📱</div>
+      <h3 class="step-title">WhatsApp Us</h3>
+      <p class="step-text">Message us on 8917288790 with your requirement — occasion, date, budget, and preferred style.</p>
+    </div>
+    <div class="step-box reveal reveal-d1">
+      <div class="step-num">02</div>
+      <div class="step-icon">📸</div>
+      <h3 class="step-title">Get Catalogue</h3>
+      <p class="step-text">We share our full catalogue with photos, prices, and availability based on your needs.</p>
+    </div>
+    <div class="step-box reveal reveal-d2">
+      <div class="step-num">03</div>
+      <div class="step-icon">💫</div>
+      <h3 class="step-title">Choose & Confirm</h3>
+      <p class="step-text">Pick your favourite pieces. We confirm booking for rent or proceed with purchase.</p>
+    </div>
+    <div class="step-box reveal reveal-d3">
+      <div class="step-num">04</div>
+      <div class="step-icon">🎁</div>
+      <h3 class="step-title">Deliver or Pickup</h3>
+      <p class="step-text">Collect from our store or get home delivery. Look stunning on your special day!</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="section-header">
+    <p class="section-eyebrow">✦ Happy Brides ✦</p>
+    <h2 class="section-title">What They <em>Say</em></h2>
+    <div class="ornament">— ✦ —</div>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">The Kundan bridal set I rented was absolutely stunning! Everyone at my wedding was asking where I got it from. Excellent quality and very affordable.</p>
+      <span class="testi-author">— Priya S., Bride</span>
+    </div>
+    <div class="testi-card reveal reveal-d1">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">Bought a gold temple set for my daughter's wedding. The quality is outstanding and the price was very reasonable. Highly recommend Lagna Jwellery!</p>
+      <span class="testi-author">— Meena D., Mother of Bride</span>
+    </div>
+    <div class="testi-card reveal reveal-d2">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">WhatsApp ordering made it so easy! They sent photos of all available sets and helped me choose the perfect one. Delivery was on time. Very happy!</p>
+      <span class="testi-author">— Anita R., Customer</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="section-header">
+    <p class="section-eyebrow">✦ Get In Touch ✦</p>
+    <h2 class="section-title">Contact <em>Us</em></h2>
+    <div class="ornament">— ✦ —</div>
+  </div>
+  <div class="contact-inner">
+    <div class="contact-info">
+      <h3>Talk to <em>Us</em></h3>
+      <p>We're just one WhatsApp message away. Reach out for imitation jewellery rentals, purchases, custom orders, or any queries.</p>
+
+      <div class="contact-detail">
+        <span class="icon">📞</span>
+        <div class="text">
+          <div class="label">Phone / Call</div>
+          <a href="tel:+918917288790">+91 89172 88790</a>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <span class="icon">💬</span>
+        <div class="text">
+          <div class="label">WhatsApp</div>
+          <a href="https://wa.me/918917288790" target="_blank">8917288790 — Chat Now</a>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <span class="icon">🕐</span>
+        <div class="text">
+          <div class="label">Timings</div>
+          <span>Mon – Sat: 10 AM – 8 PM</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-buttons">
+      <a href="https://wa.me/918917288790?text=Hello%20Lagna%20Jwellery!%20I%20am%20interested%20in%20IMITATION%20Jewellery%20(Rent%20or%20Buy).%20Please%20share%20the%20imitation%20catalogue." target="_blank" class="wa-action wa-enquiry" style="background:linear-gradient(135deg,#3d2b0f,#1a1208);border-color:rgba(184,134,11,0.4);">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span class="wa-label">💎 Imitation Jewellery Enquiry</span>
+        <span class="wa-arrow">→</span>
+      </a>
+      <a href="https://wa.me/918917288790?text=Hello%20Lagna%20Jwellery!%20I%20have%20a%20general%20enquiry." target="_blank" class="wa-action wa-enquiry">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span class="wa-label">General WhatsApp Enquiry</span>
+        <span class="wa-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-logo">Lagna Jwellery</span>
+  <p class="footer-tagline">Making every bride shine ✦</p>
+  <div class="footer-divider"></div>
+  <ul class="footer-links">
+    <li><a href="#categories">Categories</a></li>
+    <li><a href="#imitation">Imitation</a></li>
+    <li><a href="tel:+918917288790">Call: 8917288790</a></li>
+    <li><a href="https://wa.me/918917288790" target="_blank">WhatsApp Us</a></li>
+  </ul>
+  <p class="footer-copy">© 2026 Lagna Jwellery · All rights reserved · WhatsApp: 8917288790</p>
+</footer>
+
+<script>
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Tab filter
+function filterTab(btn, cat) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.jewel-card').forEach(card => {
+    if (cat === 'all' || card.dataset.cat === cat) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+</script>
+</body>
+</html>
